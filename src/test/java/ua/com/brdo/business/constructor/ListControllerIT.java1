@@ -34,9 +34,9 @@ public class ListControllerIT {
 
     @Test
     public void getHello() throws Exception {
-       /* ResponseEntity<String> response = template.getForEntity(base.toString(),
+        ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
         assertThat(response.getBody(), equalTo("{\"result\":\"success\",\"data\":{\"user_2\":{\"firstName\":\"Rob\",\"lastName\":\"Williams\",\"email\":\"rob.williams@mail.com\"},\"user_1\":{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@mail.com\"}}}"));
-        */
+
     }
 }
