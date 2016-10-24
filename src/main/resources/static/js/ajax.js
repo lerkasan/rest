@@ -3,7 +3,7 @@ function process() {
         $.ajax({
             type: "GET",
             cache: false,
-            url: '/business-constructor/list',
+            url: 'list',
             data: "",
             success: function (response) {
                 var html = "<br>" +
@@ -29,7 +29,7 @@ function process() {
             $.ajax({
                 type: "POST",
                 cache: false,
-                url: '/business-constructor/list',
+                url: 'list',
                 dataType: "json",
                 contentType: 'application/json',
                 data: JSON.stringify({
