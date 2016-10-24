@@ -26,13 +26,13 @@ public class ListController {
 
 
     @ResponseBody
-    @RequestMapping(path = "/business-constructor/list", method = RequestMethod.GET)
+    @RequestMapping(path = "/list", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getList() {
         return ResponseEntity.status(HttpStatus.OK).body(Ajax.successResponse(response));
     }
 
     @ResponseBody
-    @RequestMapping(path = "/business-constructor/list", method = RequestMethod.POST)
+    @RequestMapping(path = "/list", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> postList(@RequestBody(required = false) String newUserJson) {
         Gson json = new Gson();
         JsonParser parser = new JsonParser();
